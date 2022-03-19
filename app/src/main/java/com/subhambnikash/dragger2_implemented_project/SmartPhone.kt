@@ -2,7 +2,9 @@ package com.subhambnikash.dragger2_implemented_project
 
 import android.util.Log
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class SmartPhone @Inject constructor(batteryManager: BatteryManager,memoryCard: MemoryCard,simCard: SimCard) {
 
     init {

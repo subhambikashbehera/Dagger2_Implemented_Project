@@ -1,10 +1,12 @@
 package com.subhambnikash.dragger2_implemented_project
 
 import dagger.Component
+import javax.inject.Singleton
 
-@Component(modules = [ModuleMemoryCard::class])
+@Singleton
+@Component(modules = [ModuleMemoryCard::class,BatteryMoule::class])
 interface ComponentName {
 
-    fun setUpPhone():SmartPhone
+    fun inject(mainActivity: MainActivity)
 
 }
