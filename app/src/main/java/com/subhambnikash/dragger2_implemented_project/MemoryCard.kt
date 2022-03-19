@@ -3,7 +3,7 @@ package com.subhambnikash.dragger2_implemented_project
 import android.util.Log
 import javax.inject.Inject
 
-class MemoryCard @Inject constructor() {
+class MemoryCard {
     init {
         Log.d(LogData.TAG, ":memory initializing")
     }
